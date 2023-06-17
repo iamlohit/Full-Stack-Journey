@@ -6,7 +6,7 @@ ol {
 
 /* Write your CSS below, don't change the rules above. */
 
-p[class="note"]{
+p {
   color: red;
 }
 
@@ -23,7 +23,6 @@ li[value="4"] {
 }
 
 * {
-  color: black;
   text-align: center;
 }
 
