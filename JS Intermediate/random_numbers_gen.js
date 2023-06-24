@@ -9,4 +9,4 @@ prompt("Enter your name: ") // Prompt takes input from user.
 prompt("Enter your partner's name: ") // Reason to not save this is since we are not going to use it, lol.
 var n = Math.random() * 100; // This gives us a value between 0 - 1(but not including 1) and multiplies it to 100. The resulting number will be between 1-99.
     n = Math.floor(n) + 1; // This function round the number to the nearest integer, we add 1 to avoid 0 and also get number between 1-100.
-alert(n); //This sends a pop up message to the user on browser.
+alert("Your love score is " + n + "%"); //This sends a pop up message to the user on browser.
