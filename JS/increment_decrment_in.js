@@ -27,3 +27,17 @@ x = x - 2;
 // or
 x -= 2;
 // Both have a result of 3.
+
+// NOTE: See below,
+var x = 3;
+var y = x++;
+y += 1;
+
+// Here you would assume that the answer is 5.
+    // Since x= 3, y = x +1 = 4, then y+1 = 5.
+
+// WRONG
+
+// Here answer would be 4,
+    // Since x=3, y is assinged value of x FIRST, and then the value of x itself is increased by +1,
+    // Hence by line 3, y = 3 + 1 = 4 !!!
