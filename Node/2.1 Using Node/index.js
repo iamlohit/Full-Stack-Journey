@@ -5,4 +5,7 @@
 // Install Node LTS Runtime for mac. (Verify using "node -v" on your terminal)
 // Run this file using the command "node index.js" from the folder containing the file.
 
+// The thing about Node is that so far, with JS, we have been running the JS code sequentially, line by line. i.e Synchronously.
+// With Node, we enter the asyncronous, event-driven, JS runtime, that is designed to build scalable network applications.
+
 console.log("Welcome to Node");
