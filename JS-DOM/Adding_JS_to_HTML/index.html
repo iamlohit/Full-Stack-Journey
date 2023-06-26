@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
+
+<!-- Notes:
+- The reason for having the stylesheet css file to be in the <head> has following reasons:
+    - Style needs to be loaded first, else Style will be applied after the body is downloaded.
+    - Remember, style can be added 3 ways - inline, internal and external.
+
+- JS can be loaded in a similar way in a website - inline, internal and external. 
+    - However there is a difference:
+        - JS needs to be loaded as part of the body.
+        - Since the browser reads the HTML file sequentially line by line.
+        - So the style will be applied after the content is displayed without a style first.
+        - When loading JS inline, it causes syntax issues with how HTML is read vs how JS is read. We can make it work, but its not elegant.
+    Eg:
+        <body onload="alert('Hello');">
+            <h1>Hello</h1>
+        </body>
+
+    - When loading JS internally, as follows: This is easier to read, and does not collide with the HTML Syntax.
+    Eg:
+        <body>
+            <h1>Hello</h1>
+                <script type="text/javascript">       // This is a Script Tag in HTML.
+                
+                    alert("Hello");                   // This is typical JS code written normally between the Script Tag.
+
+                </script>
+        </body>
+
+    - When loading JS externally, as follows:
+    Eg:
+        <body>
+            <h1>Hello</h1>
+                <script src="index.js" charset="utf-8"></script>        // This still uses the Script Tag but points to a index.js file.
+        </body>
+    - What is interesting about the Script tags position:
+        - This needs to be positioned at the BOTTOM of the BODY tag.
+        - If we position it inside the <head>, our website will get JS errors.
+        - The reason this is, cuz the JS script might be referencing an HTML Element, that is not yet loaded on the browser.
+        - Another side effect reason is, that the content needs to be loaded before the JS if there is alot of JS code.
+
+NOTE: Try the above by changing/pasting/replacing the body and the head and script tags to notice.
+-->
