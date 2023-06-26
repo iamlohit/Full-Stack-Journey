@@ -8,5 +8,6 @@
 // The thing about Node is that so far, with JS, we have been running the JS code sequentially, line by line. i.e Synchronously.
 // With Node, we enter the asyncronous, event-driven, JS runtime, that is designed to build scalable network applications.
 // We are going to use the Node's - Read Evaluate Print Loop or REPL - where we will create JS code and let node run it.
+// You also get a JS Console, where you can run commands, line by line.
 
 console.log("Welcome to Node");
