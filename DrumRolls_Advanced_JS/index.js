@@ -1,0 +1,1 @@
+alert("HTML connected to JS");
